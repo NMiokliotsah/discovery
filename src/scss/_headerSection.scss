@@ -1,0 +1,56 @@
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $grey;
+    display: block;
+    padding: 56px 23px;
+    font-size: 18px;
+    transition: .3s;
+    font-weight: bold;
+
+    &:hover {
+        color: white;
+        background: $green;
+    }
+}
+
+header .container {
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $green;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 14px 20px;
+    display: block;
+    border: 2px solid $lightgrey;
+    position: relative;
+
+    &::after {
+        content: 'travel';
+        text-transform: uppercase;
+        font-size: 18px;
+        color: $green;
+        font-weight: normal;
+        position: absolute;
+        padding: 0 14px;
+        background: white;
+        top: 50px;
+        left: 40px;
+    }
+}
+
+.button-menu {
+    display: none;
+    border: none;
+}

@@ -1,1 +1,198 @@
 @import "~normalize.css";
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: white;
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #474747;
+  display: block;
+  padding: 56px 23px;
+  font-size: 18px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: white;
+  background: #59c45a;
+}
+
+header .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #59c45a;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 14px 20px;
+  display: block;
+  border: 2px solid #959595;
+  position: relative;
+}
+
+.logo::after {
+  content: 'travel';
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #59c45a;
+  font-weight: normal;
+  position: absolute;
+  padding: 0 14px;
+  background: white;
+  top: 50px;
+  left: 40px;
+}
+
+.button-menu {
+  display: none;
+  border: none;
+}
+
+.home {
+  min-height: 915px;
+  background: url(../img/bg.jpg) center/cover fixed;
+}
+
+.home-container {
+  min-height: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.home-title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 68px;
+  color: white;
+}
+
+.home-text {
+  font-size: 22px;
+  line-height: 38px;
+  color: white;
+  margin: 56px auto 100px;
+}
+
+.home-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  background: #59c45a;
+  font-size: 26px;
+  padding: 26px 60px;
+  border: 5px;
+}
+
+@media (max-width: 1000px) {
+  header .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 15px;
+  }
+  nav {
+    margin-top: 10px;
+    width: 100%;
+  }
+  nav li {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  nav a {
+    text-align: center;
+  }
+  .home {
+    min-height: auto;
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+  }
+  nav a {
+    padding: 20px 0;
+    color: white;
+    background: #59c45a;
+    border-top: 2px solid white;
+  }
+  .button-menu {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    background: #59c45a;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+  }
+  .home-title {
+    font-size: 50px;
+  }
+  header .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

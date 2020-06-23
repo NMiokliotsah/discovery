@@ -1,0 +1,36 @@
+.home {
+    min-height: 915px;
+    background: url(../img/bg.jpg) center/cover fixed;
+
+    &-container {
+        min-height: inherit;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    &-title {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 68px;
+        color:white;
+    }
+
+    &-text {
+        font-size: 22px;
+        line-height: 38px;
+        color: white;
+        margin: 56px auto 100px;
+    }
+
+    &-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        background: $green;
+        font-size: 26px;
+        padding: 26px 60px;
+        border: 5px;
+    }
+}

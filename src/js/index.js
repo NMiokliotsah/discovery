@@ -19,10 +19,4 @@ $(function () {
             navUl.css('display', 'none');
         }
     });
-    $('.service-slider').slick({
-        arrows: false,
-        dots: true
-    });
 });
-
-AOS.init();
