@@ -1,5 +1,3 @@
-@import "~normalize.css";
-
 *,
 *::before,
 *::after {
@@ -135,6 +133,79 @@ header .container {
   border: 5px;
 }
 
+.favorable {
+  padding: 100px 0 70px;
+}
+
+.section-title {
+  text-align: center;
+  color: #59c45a;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
+  position: relative;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 1px;
+  left: 50%;
+  top: 40px;
+  background: #c2c2c2;
+  -webkit-transform: translateX(-75px);
+          transform: translateX(-75px);
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  left: 50%;
+  top: 40px;
+  background: #59c45a;
+  -webkit-transform: translateX(-25px);
+          transform: translateX(-25px);
+}
+
+.fav-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.fav-item {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.fav-img {
+  width: 40%;
+}
+
+.fav-text {
+  width: 270px;
+  margin-left: 30px;
+}
+
+.fav-text h6 {
+  margin: 14px 0 25px;
+  font-size: 15px;
+  color: #c2c2c2;
+  line-height: 20px;
+}
+
 @media (max-width: 1000px) {
   header .container {
     -webkit-box-orient: vertical;
@@ -158,6 +229,26 @@ header .container {
   .home {
     min-height: auto;
     padding: 40px 0;
+  }
+  .fav-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fav-item {
+    width: 100%;
+  }
+  .fav-text {
+    width: 100%;
+  }
+  .fav-img {
+    width: 30%;
+  }
+  .tours-container a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 32%;
+            flex: 0 32%;
   }
 }
 
@@ -193,6 +284,23 @@ header .container {
   header .container {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .fav-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fav-img {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .fav-text {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
