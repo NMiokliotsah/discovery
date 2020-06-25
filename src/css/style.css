@@ -1,3 +1,6 @@
+@import "~normalize.css";
+@import "./slick.css";
+
 *,
 *::before,
 *::after {
@@ -204,6 +207,90 @@ header .container {
   font-size: 15px;
   color: #c2c2c2;
   line-height: 20px;
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #efeeee;
+  margin: 30px;
+}
+
+.service-slider {
+  width: 50%;
+  position: relative;
+}
+
+.service-slider img {
+  height: 100%;
+}
+
+.slick-list {
+  height: 100%;
+}
+
+.slick-track {
+  height: 100%;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-dots button {
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  background: #bbcfcf;
+  border-radius: 50%;
+  margin: 0 6px;
+  outline: none;
+}
+
+.slick-active button {
+  background: white;
+}
+
+.service-block {
+  width: 50%;
+  padding: 60px 0;
+}
+
+.service-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 800px;
+  margin: 60px auto 0;
+}
+
+.service-item {
+  width: 48%;
+  text-align: center;
+  padding: 0 40px;
+  margin-bottom: 35px;
+}
+
+.service-item p {
+  font-size: 14px;
+  color: #959595;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 25px;
 }
 
 @media (max-width: 1000px) {

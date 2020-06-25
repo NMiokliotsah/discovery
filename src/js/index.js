@@ -1,5 +1,6 @@
 import '../css/style.css';
 import * as $ from 'jquery';
+import 'slick-carousel';
 
 const navUl = $('nav ul');
 
@@ -18,5 +19,9 @@ $(function () {
         } else {
             navUl.css('display', 'none');
         }
+    });
+    $('.service-slider').slick({
+        arrows: false,
+        dots: true
     });
 });
