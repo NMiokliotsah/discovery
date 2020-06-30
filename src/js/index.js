@@ -1,6 +1,7 @@
 import '../css/style.css';
 import * as $ from 'jquery';
 import 'slick-carousel';
+import '@fortawesome/fontawesome-free/css/all.min.css'
 
 const navUl = $('nav ul');
 
