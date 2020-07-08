@@ -1,4 +1,25 @@
- @media(max-width: 1000px) {
+@media(max-width: 1200px) {
+    .service {
+        flex-direction: column;
+        margin: 0;
+    }
+    .service-slider,
+    .service-block {
+        width: 100%;
+    }
+
+    .service-slider {
+        height: 400px;
+    }
+
+    .slide img {
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+} 
+
+@media(max-width: 1000px) {
     header .container {
         flex-direction: column;
         padding-top: 15px;
@@ -77,9 +98,22 @@
     header .container {
         padding-left: 0;
         padding-right: 0;
-    }    
-}
+    }
 
+    .tours-container a {
+        flex: 0 49%;
+    }
+
+    .contacts-container {
+        flex-direction: column;
+    }
+
+    .contacts-info,
+    .contacts-form {
+        width: 100%;
+    }
+       
+}
 
 @media(max-width: 600px) {
     .fav-item {
@@ -94,5 +128,13 @@
     .fav-text {
         width: 70%;
         margin: 0 auto;
+    }
+
+    .service-item {
+        width: 100%;
+    }
+
+    .tours-container a {
+        flex: 0 100%;
     }
 }

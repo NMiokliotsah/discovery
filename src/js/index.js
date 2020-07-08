@@ -2,6 +2,7 @@ import '../css/style.css';
 import * as $ from 'jquery';
 import 'slick-carousel';
 import '@fortawesome/fontawesome-free/css/all.min.css'
+import AOS from 'aos';
 
 const navUl = $('nav ul');
 
@@ -26,3 +27,5 @@ $(function () {
         dots: true
     });
 });
+
+AOS.init();

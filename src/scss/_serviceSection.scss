@@ -1,24 +1,11 @@
 .service {
     display: flex;
     background: #efeeee;
-    margin: 30px;
-
-    &-slider {
-        width: 50%;
-        position: relative;
-
-        img {
-            height: 100%;
-        }
-    }
 }
 
-.slick-list {
-    height: 100%;
-}
-
-.slick-track {
-    height: 100%;
+.service-slider {
+    width: 50%;
+    position: relative;
 }
 
 .slick-dots {
@@ -63,7 +50,6 @@
 .service-item {
     width: 48%;
     text-align: center;
-    padding: 0 40px;
     margin-bottom: 35px;
 
     p {
@@ -71,6 +57,18 @@
         color: $lightgrey;
         line-height: 24px;
         text-align: left;
-        margin-top: 25px;
+        margin: 25px 0 0;
     }
+}
+
+.slide img {
+    height: 100%;
+}
+
+.slick-list {
+    height: 100%;
+}
+
+.slick-track {
+    height: 100%;
 }
