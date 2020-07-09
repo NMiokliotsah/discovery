@@ -6,6 +6,8 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const { loader } = require('mini-css-extract-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const webpack = require('webpack');
+
 
 const isDev = process.env.NODE_ENV === 'development';
 const optimization = () => {
@@ -83,6 +85,11 @@ const plugins = () => {
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: filename('css')
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
         })
     ];
     if (!isDev) {
@@ -151,7 +158,7 @@ module.exports = {
             {
                 test: /\.html$/i,
                 loader: 'html-loader',
-            }
+            },
         ]
     }
 }
